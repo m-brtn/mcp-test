@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "VaizLocalNpm": {
+      "command": "node",
+      "args": ["/Users/mbrtn/Projects/vaiz-mcp/dist/cli.js"],
+      "env": {
+        "VAIZ_API_TOKEN": "pat_5fbfca393a68f70cfc9ad4c0344b39cfcdc2dac32b46b0f200124c63a91214b9",
+        "VAIZ_SPACE_ID": "698ef59fa6bf98dce521753e",
+        "VAIZ_API_URL": "https://api.vaiz.local:10000/mcp"
+      }
+    }
+  }
+}
