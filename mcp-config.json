@@ -1,11 +1,47 @@
 {
   "mcpServers": {
-    "VaizLocalNpm": {
+    "VaizUser1": {
       "command": "node",
       "args": ["/Users/mbrtn/Projects/vaiz-mcp/dist/cli.js"],
       "env": {
         "VAIZ_API_TOKEN": "pat_5fbfca393a68f70cfc9ad4c0344b39cfcdc2dac32b46b0f200124c63a91214b9",
         "VAIZ_SPACE_ID": "698ef59fa6bf98dce521753e",
+        "VAIZ_API_URL": "https://api.vaiz.local:10000/mcp"
+      }
+    },
+    "VaizUser2": {
+      "command": "node",
+      "args": ["/Users/mbrtn/Projects/vaiz-mcp/dist/cli.js"],
+      "env": {
+        "VAIZ_API_TOKEN": "pat_3b044df931a8d802b73d970bb95f1e3fb0e92400a024d48c314648ce5a70e55f",
+        "VAIZ_SPACE_ID": "6992f9d0a735b5f763fd2a1e",
+        "VAIZ_API_URL": "https://api.vaiz.local:10000/mcp"
+      }
+    },
+    "VaizUser3": {
+      "command": "node",
+      "args": ["/Users/mbrtn/Projects/vaiz-mcp/dist/cli.js"],
+      "env": {
+        "VAIZ_API_TOKEN": "pat_7294780f11b5e4ad3b521af7a1519dcdc977777508d12118e47d53f22cfea62f",
+        "VAIZ_SPACE_ID": "6992fa0b416ff4f0775275dd",
+        "VAIZ_API_URL": "https://api.vaiz.local:10000/mcp"
+      }
+    },
+    "VaizUser4": {
+      "command": "node",
+      "args": ["/Users/mbrtn/Projects/vaiz-mcp/dist/cli.js"],
+      "env": {
+        "VAIZ_API_TOKEN": "pat_bce856cb2665aaf74ac73e70182dc2b459d3eef96ed76fbeb1528988fdd0f416",
+        "VAIZ_SPACE_ID": "6992fa4d416ff4f077527b88",
+        "VAIZ_API_URL": "https://api.vaiz.local:10000/mcp"
+      }
+    },
+    "VaizUser5": {
+      "command": "node",
+      "args": ["/Users/mbrtn/Projects/vaiz-mcp/dist/cli.js"],
+      "env": {
+        "VAIZ_API_TOKEN": "pat_6fd0c6ab275f64b5fbb7aafbbd8ac904ee3e6a7990f62241dac1e060cee69927",
+        "VAIZ_SPACE_ID": "6992fa6e416ff4f077528132",
         "VAIZ_API_URL": "https://api.vaiz.local:10000/mcp"
       }
     }

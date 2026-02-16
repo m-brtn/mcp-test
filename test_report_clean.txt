@@ -1,0 +1,487 @@
+
+==============================================================================
+  🔥 МУЛЬТИ-ЮЗЕР СТРЕСС-ТЕСТ MCP СЕРВЕРА
+==============================================================================
+  Воркеров:             50
+  Юзеров:               5
+  Воркеров на юзера:    10
+  Сессий на воркер:     2
+  Всего сессий:         100
+  Ожид. вызовов:        ~550
+
+  U0: Ruslan (owner)       воркеры W0-W9
+  U1: User-2               воркеры W10-W19
+  U2: User-3               воркеры W20-W29
+  U3: User-4               воркеры W30-W39
+  U4: User-5               воркеры W40-W49
+
+[13:14:59.143] [U0:W0] Сессия #1 — подключение...
+[13:14:59.144] [U0:W1] Сессия #1 — подключение...
+[13:14:59.144] [U0:W2] Сессия #1 — подключение...
+[13:14:59.144] [U0:W3] Сессия #1 — подключение...
+[13:14:59.144] [U0:W4] Сессия #1 — подключение...
+[13:14:59.144] [U0:W5] Сессия #1 — подключение...
+[13:14:59.144] [U0:W6] Сессия #1 — подключение...
+[13:14:59.144] [U0:W7] Сессия #1 — подключение...
+[13:14:59.144] [U0:W8] Сессия #1 — подключение...
+[13:14:59.144] [U0:W9] Сессия #1 — подключение...
+[13:14:59.144] [U1:W10] Сессия #1 — подключение...
+[13:14:59.144] [U1:W11] Сессия #1 — подключение...
+[13:14:59.144] [U1:W12] Сессия #1 — подключение...
+[13:14:59.144] [U1:W13] Сессия #1 — подключение...
+[13:14:59.144] [U1:W14] Сессия #1 — подключение...
+[13:14:59.144] [U1:W15] Сессия #1 — подключение...
+[13:14:59.144] [U1:W16] Сессия #1 — подключение...
+[13:14:59.145] [U1:W17] Сессия #1 — подключение...
+[13:14:59.145] [U1:W18] Сессия #1 — подключение...
+[13:14:59.145] [U1:W19] Сессия #1 — подключение...
+[13:14:59.145] [U2:W20] Сессия #1 — подключение...
+[13:14:59.145] [U2:W21] Сессия #1 — подключение...
+[13:14:59.145] [U2:W22] Сессия #1 — подключение...
+[13:14:59.145] [U2:W23] Сессия #1 — подключение...
+[13:14:59.145] [U2:W24] Сессия #1 — подключение...
+[13:14:59.145] [U2:W25] Сессия #1 — подключение...
+[13:14:59.145] [U2:W26] Сессия #1 — подключение...
+[13:14:59.145] [U2:W27] Сессия #1 — подключение...
+[13:14:59.145] [U2:W28] Сессия #1 — подключение...
+[13:14:59.145] [U2:W29] Сессия #1 — подключение...
+[13:14:59.145] [U3:W30] Сессия #1 — подключение...
+[13:14:59.145] [U3:W31] Сессия #1 — подключение...
+[13:14:59.145] [U3:W32] Сессия #1 — подключение...
+[13:14:59.145] [U3:W33] Сессия #1 — подключение...
+[13:14:59.145] [U3:W34] Сессия #1 — подключение...
+[13:14:59.145] [U3:W35] Сессия #1 — подключение...
+[13:14:59.145] [U3:W36] Сессия #1 — подключение...
+[13:14:59.145] [U3:W37] Сессия #1 — подключение...
+[13:14:59.145] [U3:W38] Сессия #1 — подключение...
+[13:14:59.145] [U3:W39] Сессия #1 — подключение...
+[13:14:59.145] [U4:W40] Сессия #1 — подключение...
+[13:14:59.145] [U4:W41] Сессия #1 — подключение...
+[13:14:59.145] [U4:W42] Сессия #1 — подключение...
+[13:14:59.145] [U4:W43] Сессия #1 — подключение...
+[13:14:59.145] [U4:W44] Сессия #1 — подключение...
+[13:14:59.145] [U4:W45] Сессия #1 — подключение...
+[13:14:59.145] [U4:W46] Сессия #1 — подключение...
+[13:14:59.145] [U4:W47] Сессия #1 — подключение...
+[13:14:59.145] [U4:W48] Сессия #1 — подключение...
+[13:14:59.145] [U4:W49] Сессия #1 — подключение...
+(node:65812) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65825) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65803) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65801) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65804) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65784) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65805) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65799) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65809) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65810) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65828) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65821) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65787) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65790) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65807) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65818) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65794) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65789) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65798) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65824) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65788) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65793) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65785) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65806) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65786) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65814) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65819) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65795) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65822) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65816) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65823) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65808) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65831) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65802) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65800) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65792) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65797) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65791) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65813) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65817) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65815) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65811) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65829) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65820) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65830) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65826) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65827) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65796) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65832) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65833) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[13:15:07.747] [U2:W28] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:07.819] [U2:W26] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:07.837] [U2:W21] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:07.837] [U1:W15] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:07.837] [U2:W20] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:07.837] [U4:W41] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:07.839] [U1:W17] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:07.847] [U2:W23] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:07.849] [U3:W34] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:07.849] [U1:W19] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:07.849] [U3:W38] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:07.851] [U1:W18] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:07.851] [U3:W37] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:07.851] [U2:W22] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:07.865] [U3:W35] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:07.865] [U4:W40] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:07.865] [U4:W46] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:07.888] [U1:W14] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:07.888] [U1:W10] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:07.892] [U2:W24] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:07.894] [U4:W45] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:07.902] [U1:W16] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:07.902] [U4:W49] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:07.903] [U4:W47] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:07.903] [U2:W25] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:07.903] [U1:W13] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:07.908] [U3:W30] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:07.908] [U3:W33] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:07.909] [U3:W39] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:07.909] [U4:W44] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:07.909] [U3:W32] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:07.909] [U1:W11] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:07.948] [U1:W12] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:07.948] [U4:W48] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:07.950] [U3:W31] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:07.951] [U4:W43] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:07.951] [U2:W29] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:07.951] [U2:W27] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:08.312] [U3:W36] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:08.313] [U4:W42] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:08.426] [U3:W32] Сессия #2 — подключение...
+[13:15:08.433] [U3:W33] Сессия #2 — подключение...
+[13:15:08.438] [U4:W45] Сессия #2 — подключение...
+[13:15:08.445] [U4:W40] Сессия #2 — подключение...
+[13:15:08.473] [U2:W28] Сессия #2 — подключение...
+(node:65975) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65976) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65977) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65978) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65979) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[13:15:08.533] [U1:W19] Сессия #2 — подключение...
+[13:15:08.552] [U2:W23] Сессия #2 — подключение...
+[13:15:08.564] [U3:W30] Сессия #2 — подключение...
+[13:15:08.568] [U3:W31] Сессия #2 — подключение...
+(node:65980) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65981) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65982) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65983) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[13:15:08.648] [U3:W37] Сессия #2 — подключение...
+[13:15:08.661] [U2:W21] Сессия #2 — подключение...
+(node:65984) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[13:15:08.706] [U1:W14] Сессия #2 — подключение...
+(node:65985) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65986) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[13:15:08.815] [U2:W20] Сессия #2 — подключение...
+[13:15:08.822] [U2:W22] Сессия #2 — подключение...
+(node:65987) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65988) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[13:15:08.874] [U3:W38] Сессия #2 — подключение...
+[13:15:08.892] [U2:W27] Сессия #2 — подключение...
+[13:15:08.894] [U4:W49] Сессия #2 — подключение...
+(node:65989) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:66002) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:66003) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[13:15:08.964] [U4:W44] Сессия #2 — подключение...
+(node:66004) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[13:15:09.018] [U2:W25] Сессия #2 — подключение...
+[13:15:09.044] [U1:W11] Сессия #2 — подключение...
+(node:66005) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:66006) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[13:15:09.142] [U4:W43] Сессия #2 — подключение...
+[13:15:09.159] [U1:W16] Сессия #2 — подключение...
+[13:15:09.187] [U4:W47] Сессия #2 — подключение...
+(node:66007) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:66008) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:66009) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[13:15:09.232] [U1:W15] Сессия #2 — подключение...
+[13:15:09.251] [U1:W12] Сессия #2 — подключение...
+[13:15:09.271] [U2:W26] Сессия #2 — подключение...
+[13:15:09.271] [U1:W18] Сессия #2 — подключение...
+[13:15:09.275] [U3:W34] Сессия #2 — подключение...
+(node:66010) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[13:15:09.284] [U4:W46] Сессия #2 — подключение...
+(node:66011) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:66013) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:66012) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:66014) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:66015) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[13:15:09.340] [U4:W41] Сессия #2 — подключение...
+(node:66016) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[13:15:09.393] [U1:W13] Сессия #2 — подключение...
+(node:66017) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[13:15:09.502] [U2:W29] Сессия #2 — подключение...
+[13:15:09.537] [U3:W35] Сессия #2 — подключение...
+(node:66018) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[13:15:09.555] [U4:W42] Сессия #2 — подключение...
+(node:66019) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:66020) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[13:15:09.652] [U2:W24] Сессия #2 — подключение...
+[13:15:09.657] [U0:W5] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:09.657] [U0:W4] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:09.657] [U0:W3] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:09.657] [U0:W6] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:09.657] [U0:W0] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:09.659] [U1:W17] Сессия #2 — подключение...
+[13:15:09.679] [U0:W9] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:09.679] [U0:W8] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:09.679] [U0:W2] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:09.686] [U0:W1] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:09.686] [U0:W7] Сессия #1 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+(node:66021) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:66022) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[13:15:09.713] [U3:W39] Сессия #2 — подключение...
+(node:66035) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[13:15:09.767] [U4:W48] Сессия #2 — подключение...
+(node:66036) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[13:15:09.822] [U1:W10] Сессия #2 — подключение...
+(node:66037) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[13:15:10.074] [U3:W36] Сессия #2 — подключение...
+(node:66038) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[13:15:10.178] [U0:W3] Сессия #2 — подключение...
+(node:66039) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[13:15:10.247] [U0:W9] Сессия #2 — подключение...
+(node:66040) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[13:15:10.482] [U0:W0] Сессия #2 — подключение...
+[13:15:10.493] [U0:W2] Сессия #2 — подключение...
+(node:66041) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:66042) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[13:15:10.602] [U0:W6] Сессия #2 — подключение...
+(node:66055) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[13:15:10.655] [U0:W4] Сессия #2 — подключение...
+[13:15:10.663] [U0:W1] Сессия #2 — подключение...
+[13:15:10.669] [U0:W5] Сессия #2 — подключение...
+(node:66056) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:66057) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:66058) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[13:15:11.195] [U0:W7] Сессия #2 — подключение...
+(node:66059) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[13:15:11.499] [U0:W8] Сессия #2 — подключение...
+(node:66072) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[13:15:16.814] [U3:W32] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:16.814] [U3:W32] Воркер завершен (2 сессий).
+[13:15:16.814] [U2:W28] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:16.814] [U2:W28] Воркер завершен (2 сессий).
+[13:15:16.828] [U3:W33] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:16.828] [U3:W33] Воркер завершен (2 сессий).
+[13:15:16.829] [U4:W45] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:16.829] [U4:W45] Воркер завершен (2 сессий).
+[13:15:16.829] [U4:W40] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:16.829] [U4:W40] Воркер завершен (2 сессий).
+[13:15:16.868] [U2:W23] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:16.868] [U2:W23] Воркер завершен (2 сессий).
+[13:15:16.869] [U1:W19] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:16.869] [U1:W19] Воркер завершен (2 сессий).
+[13:15:16.900] [U3:W31] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:16.900] [U3:W31] Воркер завершен (2 сессий).
+[13:15:16.927] [U3:W30] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:16.927] [U3:W30] Воркер завершен (2 сессий).
+[13:15:16.991] [U3:W37] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:16.991] [U3:W37] Воркер завершен (2 сессий).
+[13:15:16.991] [U2:W21] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:16.991] [U2:W21] Воркер завершен (2 сессий).
+[13:15:17.024] [U1:W14] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:17.024] [U1:W14] Воркер завершен (2 сессий).
+[13:15:17.117] [U2:W20] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:17.117] [U2:W20] Воркер завершен (2 сессий).
+[13:15:17.153] [U2:W22] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:17.153] [U2:W22] Воркер завершен (2 сессий).
+[13:15:17.179] [U3:W38] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:17.179] [U3:W38] Воркер завершен (2 сессий).
+[13:15:17.216] [U2:W27] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:17.216] [U2:W27] Воркер завершен (2 сессий).
+[13:15:17.217] [U4:W49] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:17.217] [U4:W49] Воркер завершен (2 сессий).
+[13:15:17.283] [U4:W44] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:17.283] [U4:W44] Воркер завершен (2 сессий).
+[13:15:17.344] [U2:W25] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:17.344] [U2:W25] Воркер завершен (2 сессий).
+[13:15:17.374] [U1:W11] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:17.374] [U1:W11] Воркер завершен (2 сессий).
+[13:15:17.498] [U4:W43] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:17.498] [U4:W43] Воркер завершен (2 сессий).
+[13:15:17.499] [U4:W47] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:17.499] [U4:W47] Воркер завершен (2 сессий).
+[13:15:17.500] [U1:W16] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:17.500] [U1:W16] Воркер завершен (2 сессий).
+[13:15:17.587] [U1:W15] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:17.587] [U1:W15] Воркер завершен (2 сессий).
+[13:15:17.588] [U1:W12] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:17.588] [U1:W12] Воркер завершен (2 сессий).
+[13:15:17.619] [U2:W26] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:17.619] [U2:W26] Воркер завершен (2 сессий).
+[13:15:17.651] [U4:W46] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:17.651] [U4:W46] Воркер завершен (2 сессий).
+[13:15:17.651] [U1:W18] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:17.651] [U1:W18] Воркер завершен (2 сессий).
+[13:15:17.651] [U3:W34] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:17.651] [U3:W34] Воркер завершен (2 сессий).
+[13:15:17.712] [U4:W41] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:17.712] [U4:W41] Воркер завершен (2 сессий).
+[13:15:17.713] [U1:W13] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:17.713] [U1:W13] Воркер завершен (2 сессий).
+[13:15:17.821] [U2:W29] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:17.821] [U2:W29] Воркер завершен (2 сессий).
+[13:15:17.855] [U3:W35] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:17.855] [U3:W35] Воркер завершен (2 сессий).
+[13:15:17.865] [U4:W42] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:17.865] [U4:W42] Воркер завершен (2 сессий).
+[13:15:17.971] [U1:W17] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:17.971] [U1:W17] Воркер завершен (2 сессий).
+[13:15:17.971] [U2:W24] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:17.971] [U2:W24] Воркер завершен (2 сессий).
+[13:15:18.056] [U3:W39] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:18.056] [U3:W39] Воркер завершен (2 сессий).
+[13:15:18.098] [U4:W48] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:18.098] [U4:W48] Воркер завершен (2 сессий).
+[13:15:18.142] [U1:W10] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:18.142] [U1:W10] Воркер завершен (2 сессий).
+[13:15:18.418] [U3:W36] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:18.418] [U3:W36] Воркер завершен (2 сессий).
+[13:15:20.324] [U0:W3] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:20.324] [U0:W3] Воркер завершен (2 сессий).
+[13:15:20.378] [U0:W9] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:20.378] [U0:W9] Воркер завершен (2 сессий).
+[13:15:20.641] [U0:W0] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:20.641] [U0:W0] Воркер завершен (2 сессий).
+[13:15:20.643] [U0:W2] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:20.643] [U0:W2] Воркер завершен (2 сессий).
+[13:15:20.764] [U0:W6] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:20.764] [U0:W6] Воркер завершен (2 сессий).
+[13:15:20.765] [U0:W1] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:20.765] [U0:W1] Воркер завершен (2 сессий).
+[13:15:20.830] [U0:W4] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:20.830] [U0:W4] Воркер завершен (2 сессий).
+[13:15:20.830] [U0:W5] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:20.830] [U0:W5] Воркер завершен (2 сессий).
+[13:15:21.303] [U0:W7] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:21.303] [U0:W7] Воркер завершен (2 сессий).
+[13:15:21.628] [U0:W8] Сессия #2 ОШИБКА: unhandled errors in a TaskGroup (1 sub-exception)
+[13:15:21.628] [U0:W8] Воркер завершен (2 сессий).
+
+==============================================================================
+  ИТОГИ МУЛЬТИ-ЮЗЕР СТРЕСС-ТЕСТА
+==============================================================================
+  Время выполнения:     22.5с
+  Юзеров:               5
+  Воркеров на юзера:    10
+  Всего воркеров:       0
+  Сессий:               200 (ошибок подключения: 100)
+  Всего вызовов:        0
+  Успешных:             0
+  С ошибками:           0
+
+  Юзер                        Воркеров    Вызовов       OK   Ошибок  Ошибок%
+  ------------------------- ---------- ---------- -------- -------- --------
+
+  Инструмент                      Вызовов   Ср.время        p95       Макс
+  ------------------------------ -------- ---------- ---------- ----------
+==============================================================================
+
