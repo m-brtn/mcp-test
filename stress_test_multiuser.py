@@ -67,6 +67,11 @@ CALLS_PER_SESSION = (3, 8)
 CALL_DELAY = (0.1, 1.0)
 SESSION_DELAY = (0.5, 2.0)
 
+# Retry подключения (поверх proxy retry — перезапуск subprocess)
+SESSION_CONNECT_RETRIES = 3
+SESSION_RETRY_BASE_DELAY = 5.0
+SESSION_RETRY_JITTER = 2.0
+
 # ─── Цвета ───────────────────────────────────────────────────────────────────
 
 USER_COLORS = [
@@ -138,9 +143,14 @@ class Stats:
         self.tool_stats: dict[str, list[float]] = {}
         self.sessions = 0
         self.session_errors = 0
+        self.session_retries = 0
         self.worker_calls: dict[int, int] = {}
         self.user_stats: dict[int, dict] = {}  # user_idx -> {calls, ok, err}
         self.start_time = time.time()
+
+    def record_retry(self):
+        with self._lock:
+            self.session_retries += 1
 
     def record_call(self, worker_id: int, user_idx: int, tool: str, duration: float, success: bool):
         with self._lock:
@@ -175,10 +185,22 @@ class Stats:
         print(f"  Юзеров:               {len(users_used)}")
         print(f"  Воркеров на юзера:    {workers_per_user}")
         print(f"  Всего воркеров:       {len(self.worker_calls)}")
-        print(f"  Сессий:               {self.sessions} (ошибок подключения: {self.session_errors})")
-        print(f"  Всего вызовов:        {self.total_calls}")
-        print(f"  {C.GREEN}Успешных:             {self.successful}{C.RESET}")
-        print(f"  {C.RED}С ошибками:           {self.errors}{C.RESET}")
+        ok_sessions = self.sessions - self.session_errors
+        sess_err_color = C.RED if self.session_errors > 0 else C.GREEN
+        call_err_color = C.RED if self.errors > 0 else C.GREEN
+        print(f"  Сессий всего:         {self.sessions}")
+        print(f"  {C.GREEN}Сессий успешных:      {ok_sessions}{C.RESET}")
+        print(f"  {sess_err_color}Сессий с ошибкой:     {self.session_errors}{C.RESET}")
+        if self.session_retries > 0:
+            print(f"  {C.YELLOW}Retry подключений:    {self.session_retries}{C.RESET}")
+        if self.sessions > 0:
+            print(f"  Успешность сессий:    {ok_sessions/self.sessions*100:.1f}%")
+        print()
+        print(f"  Вызовов всего:        {self.total_calls}")
+        print(f"  {C.GREEN}Вызовов успешных:     {self.successful}{C.RESET}")
+        print(f"  {call_err_color}Вызовов с ошибкой:    {self.errors}{C.RESET}")
+        if self.total_calls > 0:
+            print(f"  Успешность вызовов:   {self.successful/self.total_calls*100:.1f}%")
 
         if self.total_calls > 0:
             all_times = [d for times in self.tool_stats.values() for d in times]
@@ -230,54 +252,70 @@ def make_env(token: str, space_id: str) -> dict:
     }
 
 
-async def run_session(worker_id: int, user_idx: int, token: str, space_id: str, session_num: int, stats: Stats):
-    log(worker_id, user_idx, f"Сессия #{session_num} — подключение...", C.BOLD)
-    stats.record_session()
-
+async def _do_session(worker_id: int, user_idx: int, token: str, space_id: str, session_num: int, stats: Stats):
+    """Одна попытка подключения и работы в сессии. Бросает исключение при ошибке."""
     server_params = StdioServerParameters(
         command=SERVER_COMMAND,
         args=SERVER_ARGS,
         env=make_env(token, space_id),
     )
 
-    try:
-        async with stdio_client(server_params) as (read, write):
-            async with ClientSession(read, write) as session:
-                await session.initialize()
-                log(worker_id, user_idx, f"Сессия #{session_num} — подключено!", C.GREEN)
+    async with stdio_client(server_params) as (read, write):
+        async with ClientSession(read, write) as session:
+            await session.initialize()
+            stats.record_session(error=False)
+            log(worker_id, user_idx, f"Сессия #{session_num} — подключено!", C.GREEN)
 
-                num_calls = random.randint(*CALLS_PER_SESSION)
+            num_calls = random.randint(*CALLS_PER_SESSION)
 
-                for i in range(num_calls):
-                    tool_name, tool_args = random.choice(random_tool_calls())
+            for i in range(num_calls):
+                tool_name, tool_args = random.choice(random_tool_calls())
 
-                    t0 = time.time()
-                    try:
-                        result = await session.call_tool(tool_name, tool_args)
-                        duration = time.time() - t0
+                t0 = time.time()
+                try:
+                    result = await session.call_tool(tool_name, tool_args)
+                    duration = time.time() - t0
 
-                        is_error = getattr(result, "is_error", False) or getattr(result, "isError", False)
-                        if is_error:
-                            stats.record_call(worker_id, user_idx, tool_name, duration, success=False)
-                            preview = str(result.content[0].text)[:80] if result.content else "?"
-                            log(worker_id, user_idx, f"  [{i+1}/{num_calls}] {tool_name} ⚠ {duration*1000:.0f}мс — {preview}", C.RED)
-                        else:
-                            stats.record_call(worker_id, user_idx, tool_name, duration, success=True)
-                            log(worker_id, user_idx, f"  [{i+1}/{num_calls}] {tool_name} ✓ {duration*1000:.0f}мс", C.GREEN)
-
-                    except Exception as e:
-                        duration = time.time() - t0
+                    is_error = getattr(result, "is_error", False) or getattr(result, "isError", False)
+                    if is_error:
                         stats.record_call(worker_id, user_idx, tool_name, duration, success=False)
-                        log(worker_id, user_idx, f"  [{i+1}/{num_calls}] {tool_name} ✗ {duration*1000:.0f}мс — {e}", C.RED)
+                        preview = str(result.content[0].text)[:80] if result.content else "?"
+                        log(worker_id, user_idx, f"  [{i+1}/{num_calls}] {tool_name} ⚠ {duration*1000:.0f}мс — {preview}", C.RED)
+                    else:
+                        stats.record_call(worker_id, user_idx, tool_name, duration, success=True)
+                        log(worker_id, user_idx, f"  [{i+1}/{num_calls}] {tool_name} ✓ {duration*1000:.0f}мс", C.GREEN)
 
-                    delay = random.uniform(*CALL_DELAY)
-                    await asyncio.sleep(delay)
+                except Exception as e:
+                    duration = time.time() - t0
+                    stats.record_call(worker_id, user_idx, tool_name, duration, success=False)
+                    log(worker_id, user_idx, f"  [{i+1}/{num_calls}] {tool_name} ✗ {duration*1000:.0f}мс — {e}", C.RED)
 
-        log(worker_id, user_idx, f"Сессия #{session_num} — отключено.", C.DIM)
+                delay = random.uniform(*CALL_DELAY)
+                await asyncio.sleep(delay)
 
-    except Exception as e:
-        stats.record_session(error=True)
-        log(worker_id, user_idx, f"Сессия #{session_num} ОШИБКА: {e}", C.RED + C.BOLD)
+    log(worker_id, user_idx, f"Сессия #{session_num} — отключено.", C.DIM)
+
+
+async def run_session(worker_id: int, user_idx: int, token: str, space_id: str, session_num: int, stats: Stats):
+    log(worker_id, user_idx, f"Сессия #{session_num} — подключение...", C.BOLD)
+
+    for attempt in range(1, SESSION_CONNECT_RETRIES + 1):
+        try:
+            await _do_session(worker_id, user_idx, token, space_id, session_num, stats)
+            return
+        except Exception as e:
+            if attempt < SESSION_CONNECT_RETRIES:
+                delay = SESSION_RETRY_BASE_DELAY + random.uniform(0, SESSION_RETRY_JITTER)
+                stats.record_retry()
+                log(worker_id, user_idx,
+                    f"Сессия #{session_num} retry {attempt}/{SESSION_CONNECT_RETRIES} через {delay:.1f}с — {e}",
+                    C.YELLOW)
+                await asyncio.sleep(delay)
+            else:
+                stats.record_session(error=True)
+                log(worker_id, user_idx,
+                    f"Сессия #{session_num} ОШИБКА (после {SESSION_CONNECT_RETRIES} попыток): {e}",
+                    C.RED + C.BOLD)
 
 
 async def worker(worker_id: int, user_idx: int, token: str, space_id: str, num_sessions: int, stats: Stats):
