@@ -23,6 +23,10 @@ def word_count(text: str) -> int:
     """Считает количество слов в тексте."""
     return len(text.split())
 
+def greet(name: str) -> str:
+    """Возвращает приветствие для указанного имени."""
+    return "Hello, " + name + "!"
+
 if __name__ == "__main__":
     # Запуск сервера
     mcp.run()
